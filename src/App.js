@@ -21,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <h2>TodoList</h2>
       <InputField text={text} handleInput={setText} handleSubmit={addTask} />
       {status === "loading" && <h2>Loading...</h2>}
       {error && <h2>An error occured: {error}</h2>}

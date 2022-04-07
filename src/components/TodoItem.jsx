@@ -8,10 +8,10 @@ function TodoItem({id, title, completed}) {
 
   return (
     <li key={id}>
-    <input type="checkbox" checked={completed} 
+    <input className="check" type="checkbox" checked={completed} 
     onChange={() => dispatch(toggleStatus(id))} />
     <span>{title}</span>
-    <span className="delete"onClick={() => dispatch(deleteTodo(id))} >&times;</span>
+    <span className="delete"onClick={() => dispatch(deleteTodo(id))} >X</span>
   </li>
   );
 }
